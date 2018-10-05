@@ -81,53 +81,26 @@ public class changefeels extends AppCompatActivity {
                 String edfeeling = emotioned.getText().toString();
                 if (edfeeling.matches("joy") ) {
                    writefeels.joy--;
-                    Counts.remove(position);
-                    saveInFile();
-                    Toast.makeText(changefeels.this, "Deleted", Toast.LENGTH_LONG).show();
-                    Intent returnIntent = new Intent();
-                    setResult(RESULT_OK, returnIntent);
-                    finish();
+
                 }if (edfeeling.matches("love") ) {
                     writefeels.love--;
-                    Counts.remove(position);
-                    saveInFile();
-                    Toast.makeText(changefeels.this, "Deleted", Toast.LENGTH_LONG).show();
-                    Intent returnIntent = new Intent();
-                    setResult(RESULT_OK, returnIntent);
-                    finish();
+
                 }if (edfeeling.matches("sadness") ) {
                     writefeels.sadness--;
-                    Counts.remove(position);
-                    saveInFile();
-                    Toast.makeText(changefeels.this, "Deleted", Toast.LENGTH_LONG).show();
-                    Intent returnIntent = new Intent();
-                    setResult(RESULT_OK, returnIntent);
+
                     finish();
                 }if (edfeeling.matches("fear") ) {
                     writefeels.fear--;
                     Counts.remove(position);
-                    saveInFile();
-                    Toast.makeText(changefeels.this, "Deleted", Toast.LENGTH_LONG).show();
-                    Intent returnIntent = new Intent();
-                    setResult(RESULT_OK, returnIntent);
-                    finish();
+
                 }if (edfeeling.matches("anger") ) {
                     writefeels. anger--;
                     Counts.remove(position);
-                    saveInFile();
-                    Toast.makeText(changefeels.this, "Deleted", Toast.LENGTH_LONG).show();
-                    Intent returnIntent = new Intent();
-                    setResult(RESULT_OK, returnIntent);
-                    finish();
+
                 }if (edfeeling.matches("surprise") ) {
                     writefeels.surprise--;
 
-                    Counts.remove(position);
-                    saveInFile();
-                    Toast.makeText(changefeels.this, "Deleted", Toast.LENGTH_LONG).show();
-                    Intent returnIntent = new Intent();
-                    setResult(RESULT_OK, returnIntent);
-                    finish();
+
                 }Counts.remove(position);
                 saveInFile();
                 Toast.makeText(changefeels.this, "Deleted", Toast.LENGTH_LONG).show();
