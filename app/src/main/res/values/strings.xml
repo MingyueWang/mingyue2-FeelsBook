@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">mingyue2-FeelsBook</string>
+    <string name="feels_book">FeelsBook</string>
+    <string name="new_emotion">New emontion</string>
+    <string name="his_tory">History</string>
+    <string name="count_the_emotion">Count the emotion</string>
+    <string name="feel_ing">Feeling:</string>
+    <string name="time">Time:</string>
+    <string name="comment">Comment:</string>
+    <string name="emontion">emontion</string>
+    <string name="save">Save</string>
+    <string name="delete">delete</string>
+    <string name="love">Love</string>
+    <string name="joy">Joy</string>
+    <string name="surprise">Surprise</string>
+    <string name="anger">Anger</string>
+    <string name="sadness">Sadness</string>
+    <string name="date">yyyy-mm-dd-hour-min</string>
+    <string name="comment_list">...</string>
+    <string name="fear">Fear</string>
+
+</resources>

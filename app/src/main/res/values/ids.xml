@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editText" type="id" />
+    <item name="save" type="id">Save</item>
+    <item name="historyList" type="id">historylist</item>
+    <item name="totalCounts" type="id">totalcounts</item>
+    <item name="emotionlist" type="id">emotionlist</item>
+</resources>
