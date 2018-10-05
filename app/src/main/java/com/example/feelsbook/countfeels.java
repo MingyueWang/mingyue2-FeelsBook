@@ -56,7 +56,7 @@ public class countfeels extends AppCompatActivity {
         count_anger = (TextView) findViewById(R.id.textView8);
         count_surprise = (TextView) findViewById(R.id.textView9);
 
-
+        //count each emotions
         for (i=0 ; i<Counts.size();i++) {
             String countsname = Counts.get(i).getName();
             if (countsname.matches("joy")) {

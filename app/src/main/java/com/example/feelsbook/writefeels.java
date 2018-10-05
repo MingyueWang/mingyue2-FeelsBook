@@ -136,7 +136,7 @@ public class writefeels extends AppCompatActivity {
                 }
 
         });
-
+        //save the emotion in the first time
         save_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

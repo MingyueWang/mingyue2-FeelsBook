@@ -13,7 +13,7 @@ import static com.example.feelsbook.writefeels.surprise;
 public class feels {
     public static ArrayList<feels> Counts = new ArrayList<feels>();
 
-    private String feeling;                    //name of counter
+    private String feeling;                    //name of emotion
     private Date date;                      //date when modification applied
 
     private String comment;                 //user input comments. It is ok to be empty

@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         emotionlist.setAdapter(adapter);
         Button emotionButton = (Button) findViewById(R.id.button2);
         Button allcounts = (Button) findViewById(R.id.button4);
-
+        //click the button to go to another acativity to go to countsfeels
         allcounts.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
                                        });
+        //go to writefeels acativity
         emotionButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //listview to help change and delete
         emotionlist.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView,View view, int pos, long arg3){

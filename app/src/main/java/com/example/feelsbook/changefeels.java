@@ -54,27 +54,35 @@ public class changefeels extends AppCompatActivity {
         position = (bundle.getInt("position"));
         Intent intent = getIntent();
 
-
+        //save it and change the emotion and commment
         savebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String edcomment = comment_ed.getText().toString();
+
                 String edfeeling = emotioned.getText().toString();
-                //String eddate = date_ed.getText().toString();
+                if (edfeeling.matches("joy") || edfeeling.matches("love") || edfeeling.matches("fear") || edfeeling.matches("anger")
+                         || edfeeling.matches("sadness") || edfeeling.matches("surprise")) {
 
-                Counts.get(position).setComment(edcomment);
-                Counts.get(position).setName(edfeeling);
-                //Counts.get(position).setDate(eddate);
 
-                saveInFile();
-                Toast.makeText(changefeels.this, "Saved", Toast.LENGTH_LONG).show();
-                Intent returnIntent = new Intent();
-                setResult(RESULT_OK, returnIntent);
-                finish();
+                    //Date eddate = date_ed.getText().toString();
+
+                    Counts.get(position).setComment(edcomment);
+                    Counts.get(position).setName(edfeeling);
+                    //Counts.get(position).setDate(eddate);
+
+                    saveInFile();
+                    Toast.makeText(changefeels.this, "Saved", Toast.LENGTH_LONG).show();
+                    Intent returnIntent = new Intent();
+                    setResult(RESULT_OK, returnIntent);
+                    finish();
+                }else{
+                    Toast.makeText(changefeels.this, "emotion is wrong \nfailed", Toast.LENGTH_LONG).show();
+                }
 
             }
         });
-
+        //delete the emotion
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
